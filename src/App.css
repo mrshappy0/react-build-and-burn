@@ -1,33 +1,76 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    max-width: 600px;
+    font-family: Roboto, sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+input, select {
+    padding: 0.5rem 0.25rem;
+    border: 1px solid #ccc;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+select {
+    border: 1px solid #ccc;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+    border-collapse: collapse;
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app {
+    padding: 2rem;
+}
+
+.search-and-filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    display: inline-block;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.search i {
+    margin-left: 0.5rem;
+    display: inline-block;
+    color: #333;
+}
+
+.filter {
+    display: inline-block;
+}
+
+.data-table thead {
+    border-bottom: 1px solid #ccc;
+}
+
+.data-table th {
+    text-align: left;
+}
+
+.data-table tbody td {
+    padding: 0.5rem 0;
+}
+
+.add-new {
+    max-width: 300px;
+}
+
+.add-new input, .add-new select {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.active-sort {
+    background-color: hsl(220, 30%, 50%);
+    color: white;
+    border: none;
 }
