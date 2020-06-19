@@ -1,12 +1,21 @@
 import React, {Component} from 'react';
 import 'font-awesome/css/font-awesome.min.css';
+import 'semantic-ui-css/semantic.min.css';
 import './App.css';
 
 import AddNew from './AddNew'
 import DataTable from './DataTable'
 import Search from './Search'
 import Filter from './Filter'
-
+import {
+    Button,
+    Form,
+    Grid,
+    Header,
+    Message,
+    Segment,
+  } from 'semantic-ui-react';
+ 
 const apiUrl = "https://react-build-and-burn.herokuapp.com/"
 
 class App extends Component {
